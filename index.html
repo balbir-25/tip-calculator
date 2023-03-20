@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <title>Frontend Mentor | tip calculator app</title>
+</head>
+<body>
+    <!-- ==========================START MAIN AREA============================ -->
+    <main class="site">
+        <img src="./images/logo.svg" alt="logo" class="logo">
+    <!-- ============================START SECTION AREA============================== -->
+        <section class="cal">
+        <!-- ===========================START rate DIV AREA=========================== -->
+            <div class="rate">
+                <div class="red">
+                <p class="rate-para">Bill</p>
+                <p class="error" id="bill-error">Can't be zero</p>
+                </div>
+                <div class="in">
+                <img src="./images/icon-dollar.svg" alt="icon-dollar" class="rate-img">
+                <input type="number" name="bil" id="bill" placeholder="0" class="put" >
+                </div>
+                <p class="rate-para">Select rate %</p>
+                <div class="cent">
+                    <button class="rate-btn">5%</button>
+                    <button class="rate-btn">10%</button>
+                    <button class="rate-btn">15%</button>
+                    <button class="rate-btn">25%</button>
+                    <button class="rate-btn">50%</button>
+                    <input type="number" id="num" name="custom" placeholder="Custom">
+                </div>
+                <div class="red">
+                    <p class="rate-para">Number of People</p>
+                    <p class="error" id="people-error">Can't be zero</p>
+                </div>
+                <div class="in">
+                 <img src="./images/icon-person.svg" alt="icon-person" class="rate-img">   
+                <input type="number" id="people" name="people" placeholder="0" class="put">
+                </div>
+            </div>
+        <!-- ===========================START TOTAL DIV AREA======================== -->
+            <div class="total">
+                <div class="price">
+                    <div class="amount">
+                        <p class="price-para">rate Amount</p>
+                        <span class="price-span">/ person</span>
+                    </div>
+                    <span class="amount-span" id="tip">$0.00</span>
+                </div>
+                <div class="price">
+                    <div class="amount">
+                        <p class="price-para">Total</p>
+                        <span class="price-span">/ person</span>
+                    </div>
+                    <span class="amount-span" id="total">$0.00</span>
+                </div>
+                <button class="btn" type="reset">Reset</button>
+            </div>
+        </section>
+    <!-- =========================END SECTION AREA============================= -->
+    </main>
+    <!-- ==========================END MAIN AREA============================ -->
+     <!-- ================================START FOOTER AREA====================== -->
+     <footer class="foot">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="http://balbir-portfolio.liveblog365.com/" target="_blank"
+          >Balbir Singh</a
+        >.
+      </footer>
+      <!-- ================================END FOOTER AREA========================= -->
+    <script src="./script.js"></script>
+</body>
+</html>

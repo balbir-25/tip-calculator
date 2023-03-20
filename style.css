@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Space Mono";
+    background-color:  hsl(185, 41%, 84%);
+    min-width: 1340px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* ============================START MAIN AREA===================================== */
+  .site{
+    margin-top: 2rem;
+    padding: 0rem 17.2rem;
+  }
+  /* ============================START SECTION AREA=================================== */
+  .cal{
+    margin-top: 3rem;
+    padding:2rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    display: flex;
+    gap: 25px;
+    
+  }
+  /* =============================START rate DIV AREA============================= */
+  .rate{
+    text-align: start;
+  }
+
+  .red{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  .rate-para{
+    color:  hsl(186, 14%, 43%);
+    font-weight: 700;
+    font-size: 1rem;
+    font-style: normal;
+    margin-top: 1rem;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+  .error{
+    margin-top: 1rem;
+    color: hsl(0, 100%, 50%);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 1rem;
+    display: none;
+  }
+
+  .cent{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 0.6rem;
+    margin-top: 0.6rem;
+  }
+
+  .rate-btn{
+    padding: 0.625rem;
+    background-color: hsl(183, 100%, 15%);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.625rem;
+    color:hsl(189, 41%, 97%);
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    
+  }
+
+  .rate-btn:focus{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+  }
+
+  #num{
+    padding: 0.625rem;
+    width: 5.825rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.625rem;
+    font-weight: 700;
+    font-size: 1rem;
+    color: hsl(183, 100%, 15%);
+    border: none;
+    background-color: hsl(185, 41%, 84%);
+    text-align: center;
+    cursor: pointer;
+    font-family: "Space Mono";
+  }
+
+  .put{
+    margin-top: 1rem;
+    padding: 0.625rem;
+    background-color: hsl(185, 41%, 84%);
+    border: none;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: end;
+    color: hsl(183, 100%, 15%);
+    border-radius: 0.625rem;
+    cursor: pointer;
+    font-family: "Space Mono";
+    width: 95%;
+  }
+
+  #num:focus, .put:focus{
+    outline-color: hsl(172, 67%, 45%);
+  }
+
+  .rate-img{
+    margin-left: 0.938rem;
+    position: absolute;
+    margin-top: 1.875rem;
+  }
+
+  /* ============================START TOTAL DIV AREA========================= */
+  .total{
+    text-align: start;
+    border-radius: 1rem;
+    background-color: hsl(183, 100%, 15%);
+    padding: 1rem;
+    width: 400px;
+  }
+
+  .price{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  .price-para{
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(185, 41%, 84%);
+  }
+
+  .price-span{
+    font-size: 0.9rem;
+    font-weight: 700;
+    color:  hsl(186, 14%, 43%);
+    margin-top: 1rem;
+  }
+
+  .amount-span{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: hsl(172, 67%, 45%);
+  }
+
+  .btn{
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    border: none;
+    background-color:  hsl(186, 14%, 43%);
+    margin-top: 7rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+    cursor: pointer;
+    color: hsl(183, 100%, 15%);
+  }
+ 
+  .btn:hover{
+    background-color: hsl(185, 41%, 84%);
+  }
+  /* =============================END SECTION AREA================================== */
+  /* ============================END MAIN AREA===================================== */
+/* =============================START FOOTER  AREA=========================== */
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 20px;
+    color: hsl(0, 100%, 67%);
+    background-color: black;
+    margin-top: 5rem;
+  }
+  
+  .foot a {
+    text-decoration: none;
+    color: hsl(39, 100%, 56%);
+  }
+  
+  .foot a:hover {
+    color: hsl(300, 69%, 71%);
+  }
+  /* =============================END FOOTER  AREA=========================== */
+  /* ===============================START MEDIA QUERY========================== */
+  @media screen and (max-width: 768px) {
+    body{
+      min-width: 768px;
+    }
+
+    .site{
+      padding: 0rem 2rem;
+      margin-top: 2rem;
+    }
+  }
+
+  @media screen and (max-width:375px) {
+    body{
+      min-width: 375px;
+    }
+
+    .site{
+      padding: 0rem;
+    }
+    
+    .cal{
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    .total{
+      width: 350px;
+      margin-bottom: 1rem;
+    }
+
+    .cent{
+      grid-template-columns: 1fr 1fr;
+    }
+
+    #num{
+      width: 10rem;
+    }
+  }
+  /* ===============================END MEDIA QUERY========================== */
